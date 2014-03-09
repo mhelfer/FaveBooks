@@ -1,0 +1,16 @@
+<Alloy>
+	<Collection src="books"/>
+	<NavigationWindow id="navGroupWin">
+		<Window class="container" title="My Books">
+			<!-- Add TableView and TableViewRow -->
+			<TableView dataCollection="books" onClick="showBook" onLongpress="deleteBook">
+				<TableViewRow title="{title}" author="{author}" color="black"></TableViewRow>
+			</TableView>
+			<Toolbar bottom="0">
+				<Items>
+					<Button id="add" title="Add book" onClick="addBook"/>
+				</Items>
+			</Toolbar>
+		</Window>
+	</NavigationWindow>
+</Alloy>
